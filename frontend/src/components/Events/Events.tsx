@@ -1,5 +1,5 @@
 import { Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Chip, Stack, Typography } from "@mui/material";
-import { Event as IEvent, events } from './events';
+import { Event as IEvent, events } from './events_data';
 
 import { Event, EventAvailable, Person, Place } from "@mui/icons-material";
 import { useState } from "react";
