@@ -13,7 +13,7 @@ export function AppLayout(props: Props) {
       <Box
         display="flex"
         sx={{
-          backgroundColor: '#D3D3D3',
+          backgroundColor: '#f8f8f8',
           height: '100%',
           padding: '2rem 2rem 2rem 2rem',
           overflow: 'hidden',
