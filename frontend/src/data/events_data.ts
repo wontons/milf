@@ -1,4 +1,4 @@
-import logo from '../../assets/basic_logo_no_circle.png';
+import logo from '../assets/basic_logo_no_circle.png';
 
 export interface Event {
     name: string;
@@ -34,7 +34,7 @@ export const events: Event[] = [
         presenter: null,
         sponsor: null,
         location: "Stanley Park, Thornhill",
-        tier: "?",
+        tier: "C",
         date: "Sat-Sun, June 3-4, 2023",
         registration_date: "March 11, 2023",
         dgs_link: "https://www.discgolfscene.com/tournaments/2023_Pembina_Valley_Open_2023",
