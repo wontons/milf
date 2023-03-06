@@ -27,7 +27,7 @@ interface NavInfo {
   icon: React.ReactNode;
 }
 
-const navIconStyle = { marginBottom: "2px", paddingRight: "5px" };
+const navIconStyle = { marginBottom: "2px", paddingRight: "8px" };
 
 const navButtonStyle = {
   color: "#f4f2f1",
@@ -140,16 +140,14 @@ export function NavBar() {
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {pages.map((info) => (
               <Button
-                sx={navButtonStyle}
+                sx={{
+                  ...navButtonStyle,
+                  color: info.name === selected ? "white" : "#b2b2b2",
+                }}
                 onClick={() => handleItemClicked(info)}
               >
                 {info.icon}
-                <Typography
-                  variant="h6"
-                  color={info.name === selected ? "white" : "#b2b2b2"}
-                >
-                  {info.name}
-                </Typography>
+                <Typography variant="h6">{info.name}</Typography>
               </Button>
             ))}
           </Box>
