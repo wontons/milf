@@ -1,8 +1,8 @@
 import { PlayArrow } from "@mui/icons-material";
 import { Box, Button, Stack } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import Upcoming from "./Upcoming";
 import logo from "../assets/MBDGTlogoblack.png";
+import Upcoming from "./Upcoming";
 
 const url =
   "https://www.discgolfscene.com/tournaments/2023_Manitoba_Disc_Golf_Tour_2023";
@@ -13,7 +13,7 @@ export function Home() {
   return (
     <Box
       m="1rem"
-      display="flex"
+      display={{sm: "inline", lg: "flex"}}
       flex={1}
       alignItems="top"
       sx={{ overflowY: "auto", overflowX: "hidden" }}
@@ -39,7 +39,7 @@ export function Home() {
           REGISTER
         </Button>
       </Stack>
-      <Box width="25%">
+      <Box width={{ md: "100%", lg: "25%" }} justifyContent="center" alignItems="center">
         <Upcoming />
       </Box>
     </Box>

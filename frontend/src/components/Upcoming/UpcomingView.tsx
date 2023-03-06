@@ -1,6 +1,6 @@
-import { Box, Divider, Typography } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import { events, Event } from "../../data/events_data";
+import { Box, Divider, Typography } from "@mui/material";
+import { Event, events } from "../../data/events_data";
 
 function Title() {
   return (
@@ -28,7 +28,7 @@ function SmallEvent(props: Props) {
   const { event } = props;
   return (
     <Box my="1rem" px="0.5rem">
-      <Box display={"flex"} alignItems="center" justifyContent="space-between">
+      <Box display={{ xs: "inline", sm: "flex"}} alignItems="center" justifyContent="space-between">
         <Typography variant="subtitle1" fontWeight="bold">
           {event.name}
         </Typography>
