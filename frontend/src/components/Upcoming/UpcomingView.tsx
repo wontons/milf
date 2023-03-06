@@ -53,7 +53,7 @@ export default function UpcomingView() {
       p="1rem"
       border="2px solid #a1a1a1"
       borderRadius={4}
-      sx={{ position: "relative" }}
+      sx={{ position: "relative", background: "#f8f8f8" }}
     >
       <Title />
       {events.map((e, i) => {

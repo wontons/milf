@@ -111,7 +111,7 @@ export function NavBar() {
 
   return (
     <Box display="flex" mb="3rem">
-      <AppBar sx={{ background: "#010024" }}>
+      <AppBar sx={{ background: "rgba(0, 0, 0, 0.85)" }}>
         <Toolbar>
           <IconButton
             color="inherit"
