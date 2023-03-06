@@ -24,8 +24,8 @@ export const events: Event[] = [
         tier: "C",
         date: "Saturday, April 29, 2023",
         registration_date: "March 6, 2023",
-        dgs_link: "www.discgolfscene.com/tournaments/2nd_Annual_Spring_Fling_at_Kilcona_Lakes_Presented_by_Direct_Discs_2023",
-        pdga_link: "www.pdga.com/tour/event/68202",
+        dgs_link: "https://www.discgolfscene.com/tournaments/2nd_Annual_Spring_Fling_at_Kilcona_Lakes_Presented_by_Direct_Discs_2023",
+        pdga_link: "https://www.pdga.com/tour/event/68202",
         logo_src: logo,
     },
     {
@@ -38,7 +38,7 @@ export const events: Event[] = [
         date: "Sat-Sun, June 3-4, 2023",
         registration_date: "March 11, 2023",
         dgs_link: "https://www.discgolfscene.com/tournaments/2023_Pembina_Valley_Open_2023",
-        pdga_link: "www.pdga.com/tour/events",
+        pdga_link: "https://www.pdga.com/tour/events",
         logo_src: logo,
     },
     {
@@ -51,7 +51,7 @@ export const events: Event[] = [
         date: "Sat-Sun, July 15-16, 2023",
         registration_date: "Coming Soon, 2023",
         dgs_link: "https://www.discgolfscene.com/tournaments/2023_Pembina_Valley_Open_2023",
-        pdga_link: "www.pdga.com/tour/event/66135",
+        pdga_link: "https://www.pdga.com/tour/event/66135",
         logo_src: logo,
     }
 ]

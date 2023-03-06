@@ -1,3 +1,4 @@
 # the purpose of this file is to have something to update when we deploy the frontend
 # so that we can see which push is live and which isnt
 v0.1.0
+v0.1.1
