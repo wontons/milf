@@ -12,7 +12,7 @@ export function Events() {
         <Box m="1rem" sx={{ overflowY: 'auto', overflowX: 'hidden'}}>
             <Stack direction="column" alignItems="center">
                 {!selectedEvent && events.map((event: IEvent) => (
-                    <Card key={event.name} sx={{ m: '1rem', width: '50%'}}>
+                    <Card key={event.name} sx={{ m: '1rem', width: { md: "70%", xl: '50%'}}}>
                         <CardActionArea onClick={() => setSelectedEvent(event)}>
                             <CardMedia 
                                 component="img"
@@ -26,12 +26,12 @@ export function Events() {
                                     {event.presenter && ` Presented by ${event.presenter}`}
                                     {event.sponsor && ` Sponsored by ${event.sponsor}`}
                                 </Typography>
-                                <Stack direction="row" spacing={2}>
+                                <Stack direction={{ md: "column", lg: "row"}} spacing={2}>
                                     <Stack spacing={2}>
                                         <Chip icon={<EventAvailable />} label={`Registration Opens: ${event.registration_date}`} />
                                         <Chip icon={<Event />} label={`Tournament: ${event.date}`} />
                                     </Stack>
-                                    <Stack spacing={2}>
+                                    <Stack spacing={2} mt="1rem">
                                         <Chip icon={<Place />} label={event.location} />
                                         <Chip icon={<Person />} label={event.td} />
                                     </Stack>
