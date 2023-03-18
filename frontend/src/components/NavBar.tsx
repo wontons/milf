@@ -1,9 +1,9 @@
-import MenuIcon from "@mui/icons-material/Menu";
-import HomeIcon from "@mui/icons-material/Home";
-import TourIcon from "@mui/icons-material/Tour";
 import EventIcon from "@mui/icons-material/Event";
+import HomeIcon from "@mui/icons-material/Home";
+import MenuIcon from "@mui/icons-material/Menu";
 import PeopleIcon from "@mui/icons-material/People";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+import TourIcon from "@mui/icons-material/Tour";
 import {
   Box,
   Button,
@@ -15,7 +15,7 @@ import {
   ListItemButton,
   ListItemText,
   Toolbar,
-  Typography,
+  Typography
 } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import { useState } from "react";
@@ -43,10 +43,15 @@ const pages: NavInfo[] = [
     icon: <PeopleIcon sx={navIconStyle} />,
   },
   {
-    name: "DISC GAME",
-    link: "/discgame",
+    name: "LEADERBOARDS",
+    link: "/leaderboards",
     icon: <SportsEsportsIcon sx={navIconStyle} />,
   },
+  // {
+  //   name: "DISC GAME",
+  //   link: "/discgame",
+  //   icon: <SportsEsportsIcon sx={navIconStyle} />,
+  // },
 ];
 
 export function NavBar() {
@@ -145,6 +150,7 @@ export function NavBar() {
                   color: info.name === selected ? "white" : "#b2b2b2",
                 }}
                 onClick={() => handleItemClicked(info)}
+                key={info.name}
               >
                 {info.icon}
                 <Typography variant="h6">{info.name}</Typography>

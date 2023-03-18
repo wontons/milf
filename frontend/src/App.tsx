@@ -6,6 +6,7 @@ import { AppLayout } from './components/AppLayout';
 import { DiscGame } from './components/DiscGame';
 import { DiscGameHome } from './components/DiscGame/DiscGameHome';
 import { Events } from './components/Events/Events';
+import { Leaderboards } from './components/Leaderboards';
 import { Tour } from './components/Tour';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="/tour" element={<Tour />} />
             <Route path="/events" element={<Events />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/leaderboards" element={<Leaderboards />} />
             {/* <Route path="/player-search" element={<PlayerSearch />} /> */}
           </Routes>
         )}/>

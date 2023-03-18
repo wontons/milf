@@ -58,9 +58,9 @@ export default function UpcomingView() {
       <Title />
       <Box height={{ xs: "20px", sm: "0px"}} />
       {events.map((e, i) => {
-        let ret = [<SmallEvent event={e} />];
+        let ret = [<SmallEvent event={e} key={e.name}/>];
         if (i < events.length - 1) {
-          ret.push(<Divider />);
+          ret.push(<Divider key={i}/>);
         }
         return ret.map((c) => c);
       })}
