@@ -1,3 +1,4 @@
+import { Redeem } from "@mui/icons-material";
 import EventIcon from "@mui/icons-material/Event";
 import HomeIcon from "@mui/icons-material/Home";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -46,6 +47,11 @@ const pages: NavInfo[] = [
     name: "LEADERBOARDS",
     link: "/leaderboards",
     icon: <SportsEsportsIcon sx={navIconStyle} />,
+  },
+  {
+    name: "SPONSORS",
+    link: "/sponsors",
+    icon: <Redeem sx={navIconStyle} />,
   },
   // {
   //   name: "DISC GAME",
