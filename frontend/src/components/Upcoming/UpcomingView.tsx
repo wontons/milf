@@ -56,6 +56,7 @@ export default function UpcomingView() {
       sx={{ position: "relative", background: "#f8f8f8" }}
     >
       <Title />
+      <Box height={{ xs: "20px", sm: "0px"}} />
       {events.map((e, i) => {
         let ret = [<SmallEvent event={e} />];
         if (i < events.length - 1) {
