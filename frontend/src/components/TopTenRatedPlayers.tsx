@@ -7,11 +7,11 @@ export function TopTenRatedPlayers() {
     const { api } = useAPI();
     const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
-    const [players, setPlayers] = useState<Player[]>([]);
+    const [players, setPlayers] = useState<any[]>([]);
 
     useEffect(() => {
         setLoading(true);
-        api<Player[]>('get', 'http://localhost:5000/players?state_prov=MB&class=P').then((resp) => {
+        api<any[]>('get', 'http://localhost:5000/players?state_prov=MB&class=P').then((resp) => {
             setPlayers(resp.data);
         }).catch((e) => {
             setError(e?.response?.data?.message || "failed to get players")

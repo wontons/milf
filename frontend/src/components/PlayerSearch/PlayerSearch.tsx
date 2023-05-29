@@ -13,7 +13,7 @@ interface Props{
     loading: boolean;
     error: string | null;
     offset: number;
-    players: Player[];
+    players: any[];
 }
 
 export function PlayerSearch(props: Props) {

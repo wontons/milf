@@ -5,22 +5,29 @@ interface AxiosResponse<T> {
     data: T;
 }
 
-interface Player {
-    first_name: string;
-    last_name: string;
-    pdga_number: number;
-    membership_status: string;
-    membership_expiration_date: string;
-    classification: string;
-    city: string;
-    state_prov: string;
-    country: string;
-    rating: number;
-    rating_effective_date: string;
-    official_status: string;
-    official_expiration_date: string;
-    last_modified: string;
+interface Player { 
+    id: number;
+    place: string;
+    name: string;
+    points: number;
 }
+
+// interface Player {
+//     first_name: string;
+//     last_name: string;
+//     pdga_number: number;
+//     membership_status: string;
+//     membership_expiration_date: string;
+//     classification: string;
+//     city: string;
+//     state_prov: string;
+//     country: string;
+//     rating: number;
+//     rating_effective_date: string;
+//     official_status: string;
+//     official_expiration_date: string;
+//     last_modified: string;
+// }
 
 interface PlayerStats {
     first_name: string;

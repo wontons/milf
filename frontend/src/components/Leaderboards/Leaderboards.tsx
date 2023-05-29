@@ -1,34 +1,57 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
+import { DataGrid } from "@mui/x-data-grid";
+import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
+import { fa1, fa2, fa3, fa40, ma1, ma2, ma3, ma40, mpo } from "./fall_classic_2023";
+import LeaderboardDesktopMenu from "./LeaderboardDesktopMenu";
+import LeaderboardMobileMenu from "./LeaderboardMobileMenu";
+import LeaderboardTabPanel from "./LeaderboardTabPanel";
+import { leaderboardColumns } from "./utils";
 
-const players = [
-    'Adam Verrier 229055',
-    'Airyn Clark 187630',
-    'Alex MacNeil 215574',
-    'Andrew Ridd 235325',
-    'Anton Sawka 211169',
-    'Dan Edinborough 103620',
-    'David Harrison 208773',
-    'Eric Giesbrecht 80850',
-    'Eric Kulchycki	75272',
-    'Jim Fraser 18727',
-    'Jonathan Villaverde 204038',
-    'Mike Evans 208478',
-    'Nick Briere 126734',
-    'Sarah Mitchell 242081',
-    'Sunny Dhillon 234954',
-    'Xavier Tomanek	89051',
-]
+const divisions: Player[][] = [[], mpo, ma40, fa40, ma1, fa1, ma2, fa2, ma3, fa3]
 
-
-export function Leaderboards () {
-    return (
-        <Box display="flex" flex={1} alignItems="top" justifyContent="center" sx={{ overflowY: 'auto', overflowX: 'hidden'}}>
-            <Stack direction="column" alignItems="center" mr="1rem">
-                <Typography variant="h4"><strong>Leaderboards</strong></Typography>
-                {players.map((player) => (
-                    <Typography variant="h6" key={player}>{player}</Typography>
-                ))}
-            </Stack>
-        </Box>
-    );
+interface TabProps {
+    rows: Player[];
+    selected: number;
+    index: number;
 }
+
+const TabPanel = (props: TabProps) => {
+    const { rows, selected, index } = props;
+
+    return (
+        <LeaderboardTabPanel value={selected} index={index}>
+            {rows.length === 0 ? (
+                <Typography align="center">No available data</Typography>
+            ) : (
+                <DataGrid rows={rows} columns={leaderboardColumns} hideFooter disableColumnMenu disableColumnFilter/>
+            )}
+        </LeaderboardTabPanel>
+    );
+};
+
+const Leaderboards = () => {
+    const [selected, setSelected] = useState<number>(1);
+    const isMenuVertical = useMediaQuery({ query: '(max-width: 768px'});
+    
+    const handleChange = (e: React.SyntheticEvent, value: number) => {
+        setSelected(value);
+    };
+
+    return (
+        <Stack direction="column" alignItems="center" height="50%">
+            <Typography variant="h4"><strong>Leaderboards</strong></Typography>
+            {isMenuVertical && (
+                <LeaderboardMobileMenu selected={selected} handleChange={handleChange} />
+            )}
+            {!isMenuVertical && (
+                <LeaderboardDesktopMenu selected={selected} handleChange={handleChange}/>  
+            )}
+            {divisions.map((division, i) => (
+                <TabPanel rows={division} selected={selected} index={i} key={i}/>
+            ))}
+        </Stack>
+    )
+}
+
+export default Leaderboards;

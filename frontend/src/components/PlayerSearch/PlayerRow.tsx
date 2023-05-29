@@ -1,7 +1,7 @@
 import { TableCell, TableRow, Typography } from "@mui/material";
 
 interface Props {
-    player: Player;
+    player: any;
 }
 
 export function PlayerRow(props: Props) {
