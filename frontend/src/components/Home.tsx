@@ -44,6 +44,14 @@ export function Home() {
         >
           REGISTER
         </Button>
+        <Button
+          sx={{ mt: "1rem", width: { xs: "75%", sm: "50%"}}}
+          variant="contained"
+          endIcon={<PlayArrow />}
+          onClick={() => navigate('/leaderboards')}
+        >
+          LEADERBOARDS
+        </Button>
       </Stack>
       <Box width={{ md: "100%", lg: "25%" }} justifyContent="center" alignItems="center">
         <Upcoming />

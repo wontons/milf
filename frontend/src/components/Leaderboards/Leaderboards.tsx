@@ -62,7 +62,7 @@ const Leaderboards = () => {
     };
 
     return (
-        <Stack direction="column" alignItems="center" height="50%">
+        <Stack direction="column" alignItems="center" sx={{ overflowY: 'auto'}}>
             <Typography variant="h4"><strong>Leaderboards</strong></Typography>
             {isMenuVertical && (
                 <LeaderboardMobileMenu selected={selected} handleChange={handleChange} />
