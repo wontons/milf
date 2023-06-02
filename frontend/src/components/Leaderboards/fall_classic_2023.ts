@@ -4,6 +4,7 @@ export const mpo: Player[] = [
     { id: 2, place: "3", name: "Nick Briere", points: 26 , is_tour_member: true },
     { id: 3, place: "4", name: "Kevin Desrosiers", points: 23 , is_tour_member: true },
     { id: 4, place: "4", name: "Xavier Tomanek", points: 23 , is_tour_member: true },
+    { id: 5, place: "5", name: "Josh Logozar", points: 11 , is_tour_member: true },
     ]
     export const ma40: Player[] = [
     { id: 0, place: "1", name: "Kevin Talgoy", points: 27 , is_tour_member: true },
@@ -42,8 +43,9 @@ export const mpo: Player[] = [
     { id: 11, place: "10", name: "Dustin Wolfe", points: 8 , is_tour_member: true },
     ]
     export const fa2: Player[] = [
-    { id: 0, place: "1", name: "Brittany Peters", points: 11 , is_tour_member: true },
-    { id: 1, place: "2", name: "Sarah Mitchell", points: 8 , is_tour_member: true },
+    { id: 0, place: "1", name: "Camilla Tang", points: 15 , is_tour_member: true },
+    { id: 1, place: "2", name: "Brittany Peters", points: 11 , is_tour_member: true },
+    { id: 2, place: "3", name: "Sarah Mitchell", points: 8 , is_tour_member: true },
     ]
     export const ma3: Player[] = [
     { id: 0, place: "1", name: "Joel Vankoughnet", points: 43 , is_tour_member: true },
