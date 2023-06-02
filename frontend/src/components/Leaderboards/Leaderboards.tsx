@@ -28,7 +28,7 @@ const LeaderTabPanel = (props: LeaderTabProps) => {
     console.log(rows)
 
     return (
-        <Box style={{ marginBottom: '1rem'}}>
+        <Box mb="1rem" mr="1rem">
             <Typography>{division}</Typography>
             {rows.length === 0 ? (
                 <Typography align="center">No available data</Typography>

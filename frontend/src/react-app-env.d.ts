@@ -10,6 +10,7 @@ interface Player {
     place: string;
     name: string;
     points: number;
+    is_tour_member: boolean;
 }
 
 // interface Player {
