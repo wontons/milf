@@ -53,7 +53,7 @@ const TabPanel = (props: TabProps) => {
 
 const Leaderboards = () => {
     const [selected, setSelected] = useState<number>(0);
-    const isMenuVertical = useMediaQuery({ query: '(max-width: 768px'});
+    const isMenuVertical = useMediaQuery({ query: '(max-width: 980px'});
     
     const handleChange = (e: React.SyntheticEvent, value: number) => {
         setSelected(value);
