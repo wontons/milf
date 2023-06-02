@@ -1,7 +1,6 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { useState } from "react";
-import { useMediaQuery } from "react-responsive";
 import { fa1, fa2, fa3, fa40, ma1, ma2, ma3, ma40, mpo } from "./fall_classic_2023";
 import LeaderboardDesktopMenu from "./LeaderboardDesktopMenu";
 import LeaderboardMobileMenu from "./LeaderboardMobileMenu";
@@ -53,7 +52,7 @@ const TabPanel = (props: TabProps) => {
 
 const Leaderboards = () => {
     const [selected, setSelected] = useState<number>(0);
-    const isMenuVertical = useMediaQuery({ query: '(max-width: 980px'});
+    const isMenuVertical = ({ query: '(max-width: 1100px'});
     
     const handleChange = (e: React.SyntheticEvent, value: number) => {
         setSelected(value);
