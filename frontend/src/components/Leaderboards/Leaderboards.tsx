@@ -25,8 +25,6 @@ interface TabProps {
 const LeaderTabPanel = (props: LeaderTabProps) => {
     const { rows, division } = props;
 
-    console.log(rows)
-
     return (
         <Box mb="1rem" mr="1rem">
             <Typography>{division}</Typography>
