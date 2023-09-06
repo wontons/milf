@@ -1,13 +1,13 @@
 export const mpo: Player[] = [
-    { id: 0, place: "1", name: "Terrell Feakes", points: 116.25 , is_tour_member: true },
-    { id: 1, place: "2", name: "Eric Giesbrecht", points: 109 , is_tour_member: true },
-    { id: 2, place: "3", name: "Marshall Toews", points: 100 , is_tour_member: true },
-    { id: 3, place: "3", name: "Devin Koop", points: 100 , is_tour_member: true },
-    { id: 4, place: "4", name: "Jonathan Vandenberg", points: 97 , is_tour_member: true },
-    { id: 5, place: "5", name: "Nick Briere", points: 84 , is_tour_member: true },
-    { id: 6, place: "6", name: "Xavier Tomanek", points: 82 , is_tour_member: true },
-    { id: 7, place: "7", name: "Josh Logozar", points: 51 , is_tour_member: true },
-    { id: 8, place: "8", name: "Kevin Desrosiers", points: 42 , is_tour_member: true },
+    { id: 0, place: "1", name: "Marshall Toews", points: 139 , is_tour_member: true },
+    { id: 1, place: "2", name: "Eric Giesbrecht", points: 135 , is_tour_member: true },
+    { id: 2, place: "3", name: "Devin Koop", points: 123 , is_tour_member: true },
+    { id: 3, place: "4", name: "Nick Briere", points: 120 , is_tour_member: true },
+    { id: 4, place: "5", name: "Terrell Feakes", points: 116.25 , is_tour_member: true },
+    { id: 5, place: "6", name: "Xavier Tomanek", points: 102 , is_tour_member: true },
+    { id: 6, place: "7", name: "Jonathan Vandenberg", points: 97 , is_tour_member: true },
+    { id: 7, place: "8", name: "Josh Logozar", points: 65 , is_tour_member: true },
+    { id: 8, place: "9", name: "Kevin Desrosiers", points: 53 , is_tour_member: true },
     ]
     export const ma40: Player[] = [
     { id: 0, place: "1", name: "Dan Edinborough", points: 147 , is_tour_member: true },
