@@ -3,6 +3,7 @@ import accurate_leasing from "../../assets/AccurateLeasing.png";
 import dr_logo_bar from "../../assets/DR_bar.png";
 import dr_logo_vert from "../../assets/DR_vert.png";
 import kilter_brewing_co from "../../assets/KilterBrewingCo.webp";
+import odins_eye from "../../assets/OdinsEye.png";
 import avail from "../../assets/avail.png";
 import local_public_eatery from "../../assets/localpubliceatery.png";
 import victory_pints from "../../assets/victorypints.webp";
@@ -25,6 +26,8 @@ export function Sponsors () {
                 <Box component="img" src={local_public_eatery} alt="local public eatery" height="100px" display={{ xs: 'block', sm: 'none' }} mb="1rem"/>
                 <Box component="img" src={avail} alt="avail" height="300px" display={{ xs: 'none', sm: 'block' }} mb="1rem"/>
                 <Box component="img" src={avail} alt="avail" height="200px" display={{ xs: 'block', sm: 'none' }} mb="1rem"/>
+                <Box component="img" src={odins_eye} alt="odins eye" height="300px" display={{ xs: 'none', sm: 'block' }} mb="1rem"/>
+                <Box component="img" src={odins_eye} alt="odins eye" height="200px" display={{ xs: 'block', sm: 'none' }} mb="1rem"/>
             </Stack>
         </Box>
     );
