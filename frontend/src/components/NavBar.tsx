@@ -1,5 +1,5 @@
 import { Redeem } from "@mui/icons-material";
-import EventIcon from "@mui/icons-material/Event";
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import HomeIcon from "@mui/icons-material/Home";
 import MenuIcon from "@mui/icons-material/Menu";
 import PeopleIcon from "@mui/icons-material/People";
@@ -37,7 +37,7 @@ const navButtonStyle = {
 
 const pages: NavInfo[] = [
   { name: "TOUR", link: "/tour", icon: <TourIcon sx={navIconStyle} /> },
-  { name: "CHAMPIONSHIP", link: "/championship", icon: <EventIcon sx={navIconStyle} /> },
+  { name: "CHAMPIONSHIP", link: "/championship", icon: <EmojiEventsIcon sx={navIconStyle} /> },
   {
     name: "ABOUT US",
     link: "/about-us",

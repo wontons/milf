@@ -55,7 +55,6 @@ export function Championship() {
                                 <Typography variant="body1" textAlign="center">MA40</Typography>
                                 <Typography variant="body1" textAlign="center">FA1</Typography>
                                 <Typography variant="body1" textAlign="center">MA1</Typography>
-                                <Typography variant="body1" textAlign="center">MA1</Typography>
                                 <Typography variant="body1" textAlign="center">MA2</Typography>
                             </Box>
                             <Box>
