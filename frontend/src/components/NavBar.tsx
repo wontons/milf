@@ -37,7 +37,7 @@ const navButtonStyle = {
 
 const pages: NavInfo[] = [
   { name: "TOUR", link: "/tour", icon: <TourIcon sx={navIconStyle} /> },
-  { name: "EVENTS", link: "/events", icon: <EventIcon sx={navIconStyle} /> },
+  { name: "CHAMPIONSHIP", link: "/championship", icon: <EventIcon sx={navIconStyle} /> },
   {
     name: "ABOUT US",
     link: "/about-us",
