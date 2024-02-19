@@ -1,70 +1,82 @@
-import logo from '../assets/basic_logo_no_circle.png';
-
-export interface Event {
-    name: string;
-    td: string;
-    presenter: string | null;
-    sponsor: string | null;
-    location: string;
-    tier: string;
-    date: string;
-    registration_date: string;
-    dgs_link: string;
-    pdga_link: string;
-    logo_src: string | null;
-}
-
-export const events: Event[] = [
-    // {
-    //     name: "Spring Fling",
-    //     td: "Terrell Feakes",
-    //     presenter: "Direct Discs",
-    //     sponsor: null,
-    //     location: "Kilcona Lakes, Winnipeg",
-    //     tier: "C",
-    //     date: "Saturday, April 29, 2023",
-    //     registration_date: "March 6, 2023",
-    //     dgs_link: "https://www.discgolfscene.com/tournaments/2nd_Annual_Spring_Fling_at_Kilcona_Lakes_Presented_by_Direct_Discs_2023",
-    //     pdga_link: "https://www.pdga.com/tour/event/68202",
-    //     logo_src: logo,
-    // },
-    // {
-    //     name: "Pembina Valley Open",
-    //     td: "Eric Giesbrecht",
-    //     presenter: null,
-    //     sponsor: null,
-    //     location: "Stanley Park, Thornhill",
-    //     tier: "C",
-    //     date: "Sat-Sun, June 3-4, 2023",
-    //     registration_date: "March 11, 2023",
-    //     dgs_link: "https://www.discgolfscene.com/tournaments/2023_Pembina_Valley_Open_2023",
-    //     pdga_link: "https://www.pdga.com/tour/events",
-    //     logo_src: logo,
-    // },
-    // {
-    //     name: "Manitoba Provincials",
-    //     td: "Marshall Toews",
-    //     presenter: null,
-    //     sponsor: null,
-    //     location: "Labarriere Park, Winnipeg",
-    //     tier: "C",
-    //     date: "Sat-Sun, July 15-16, 2023",
-    //     registration_date: "Coming Soon, 2023",
-    //     dgs_link: "https://www.discgolfscene.com/tournaments/2023_Pembina_Valley_Open_2023",
-    //     pdga_link: "https://www.pdga.com/tour/event/66135",
-    //     logo_src: logo,
-    // },
+export const events: IEvent[] = [
     {
-        name: "Tour Championship",
+        title: "3rd Annual Spring Fling @ Kilcona Lakes Presented by Direct Discs",
+        tier: "C",
+        date: "Saturday, April 13",
+        location: "Kilcona Lakes",
+        td: "Terrel Feakes",
+        url: "https://www.discgolfscene.com/tournaments/3rd_Annual_Spring_Fling_at_Kilcona_Lakes_Presented_by_Direct_Discs_2024/registration",
+    },
+    {
+        title: "2024 DGM - Battle for the Baskets",
+        tier: "C",
+        date: "Sat-Sun, May 4-5",
+        location: "Kilcona Lakes",
+        td: "Mike Evans, Nick Briere",
+        url: "https://www.discgolfscene.com/tournaments/2024_DGM_Battle_for_the_Baskets_2024/registration",
+    },
+    {
+        title: "2024 Pembina Valley Open - MP1, MA2",
+        tier: "C",
+        date: "Saturday, June 8",
+        location: "Stanley Park",
+        td: "Eric Giesbrecht",
+        url: "https://www.discgolfscene.com/tournaments/2024_Pembina_Valley_Open_MA1_MA2/registration",
+    },
+    {
+        title: "2024 Pembina Valley Open - FA1, FA2, FA3, FA40, MA3, MA40",
+        tier: "C",
+        date: "Sunday, June 9",
+        location: "Stanley Park",
+        td: "Eric Giesbrecht",
+        url: "https://www.discgolfscene.com/tournaments/2024_Pembina_Valley_Open_MPO_FA1_FA2_FA3_FA40_MA3_MA40_2024/registration",
+    },
+    {
+        title: "2024 Pembina Valley Open - MPO",
+        tier: "C",
+        date: "Sat-Sun, June 8-9",
+        location: "Stanley Park",
+        td: "Eric Giesbrecht",
+        url: "https://www.discgolfscene.com/tournaments/2024_Pembina_Valley_Open_MPO/registration",
+    },
+    {
+        title: "Man I Love Frisbee Open",
+        tier: "C",
+        date: "Sat-Sun, June 22-23",
+        location: "La Barriere Park",
         td: "Xavier Tomanek",
-        presenter: null,
-        sponsor: null,
-        location: "Stony Mountain Disc Golf Course",
+        url: "",
+    },
+    {
+        title: "5th Annual DGM Provincials - Sponsored by Disc Republic & Powered by Prodigy",
+        tier: "B",
+        date: "Sat-Sun, July 13-14",
+        location: "La Barriere Park, Stony Mountain Quarry",
+        td: "Jessican Benoit",
+        url: "https://www.discgolfscene.com/tournaments/5th_Annual_DGM_Provincials_2024/registration",
+    },
+    {
+        title: "2024 Portage Open",
+        tier: "C",
+        date: "TBA",
+        location: "Island Park",
+        td: "Cody Buhler",
+        url: "",
+    },
+    {
+        title: "2024 DGM Fall Classic",
+        tier: "C",
+        date: "Sat-Sun, September 21-22",
+        location: "Kilcona Lakes",
+        td: "Nick Briere, Jessica Benoit",
+        url: "https://www.discgolfscene.com/tournaments/2024_DGM_Fall_Classic_2024/registration",
+    },
+    {
+        title: "2024 Manitoba Disc Golf Tour",
         tier: "XC",
-        date: "Sat-Sun, September 30 - October 1, 2023",
-        registration_date: " Closes September 22",
-        dgs_link: "https://www.discgolfscene.com/tournaments/The_Manitoba_Disc_Golf_Tour_Championship_sponsored_by_Disc_Republic_2023",
-        pdga_link: "https://www.pdga.com/tour/event/72976",
-        logo_src: logo,
-    }
+        date: "Sat-Sun, October 5-6",
+        location: "Stony Mountain Quarry",
+        td: "Xavier Tomanek",
+        url: "https://www.discgolfscene.com/tournaments/2024_Manitoba_Disc_Golf_Tour_2024/registration",
+    },
 ]

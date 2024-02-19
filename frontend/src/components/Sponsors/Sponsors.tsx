@@ -12,10 +12,9 @@ export function Sponsors () {
     return (
         <Box display="flex" flex={1} alignItems="top" justifyContent="center" sx={{ overflowY: 'auto', overflowX: 'hidden'}}>
             <Stack direction="column" alignItems="center" mr="1rem" mt="1rem">
-                <Typography variant="h5" mt="1rem"><strong>Title Sponsor</strong></Typography>
+                <Typography variant="h5" mt="1rem"><strong>2023</strong></Typography>
                 <Box component="img" src={dr_logo_bar} alt="disc republic" height={{ sm: "105px", md:"170px"}} display={{ xs: 'none', sm: 'block' }}/>
                 <Box component="img" src={dr_logo_vert} alt="disc republic" height="100px" mb="3rem" display={{ xs: 'block', sm: 'none' }}/>
-                <Typography variant="h5" mb="1rem"><strong>Sponsors</strong></Typography>
                 <Box component="img" bgcolor="black" src={kilter_brewing_co} alt="kilter brewing co" height="200px" display={{ xs: 'none', sm: 'block' }} mb="1rem"/>
                 <Box component="img" bgcolor="black" src={kilter_brewing_co} alt="kilter brewing co" height="100px" display={{ xs: 'block', sm: 'none' }} mb="1rem"/>
                 <Box component="img" src={victory_pints} alt="victory pints" height="200px" display={{ xs: 'none', sm: 'block' }} mb="1rem"/>

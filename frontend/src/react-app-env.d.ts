@@ -49,30 +49,13 @@ interface PlayerStats {
     last_modified: string;
 }
 
-interface Event {
-    tournament_id: number;
-    tournament_name: string;
-    city: string;
-    state_prov: string;
-    country: string;
-    latitude: string;
-    longitude: string;
-    start_date: string;
-    end_date: string;
-    class: string;
+interface IEvent {
+    title: string;
     tier: string;
-    status: string;
-    format: string;
-    tournament_director: string;
-    tournament_director_pdga_number: number;
-    asst_tournament_director: string;
-    asst_tournament_director_pdga_number: number;
-    event_email: string;
-    event_phone: string;
-    event_url: string;
-    website_url: string;
-    registration_url: string;
-    last_modified: string;
+    date: string;
+    location: string;
+    td: string;
+    url: string;
 }
 
 interface Course {

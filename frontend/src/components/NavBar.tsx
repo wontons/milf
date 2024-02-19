@@ -1,9 +1,8 @@
 import { Redeem } from "@mui/icons-material";
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import EventIcon from '@mui/icons-material/Event';
 import HomeIcon from "@mui/icons-material/Home";
 import MenuIcon from "@mui/icons-material/Menu";
-import PeopleIcon from "@mui/icons-material/People";
-import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
 import TourIcon from "@mui/icons-material/Tour";
 import {
   Box,
@@ -37,27 +36,27 @@ const navButtonStyle = {
 
 const pages: NavInfo[] = [
   { name: "TOUR", link: "/tour", icon: <TourIcon sx={navIconStyle} /> },
-  { name: "CHAMPIONSHIP", link: "/championship", icon: <EmojiEventsIcon sx={navIconStyle} /> },
+  // { name: "CHAMPIONSHIP", link: "/championship", icon: <EmojiEventsIcon sx={navIconStyle} /> },
   {
-    name: "ABOUT US",
-    link: "/about-us",
-    icon: <PeopleIcon sx={navIconStyle} />,
+    name: "EVENTS",
+    link: "/events",
+    icon: <EventIcon sx={navIconStyle} />
   },
-  {
-    name: "LEADERBOARDS",
-    link: "/leaderboards",
-    icon: <SportsEsportsIcon sx={navIconStyle} />,
-  },
+  // {
+  //   name: "LEADERBOARDS",
+  //   link: "/leaderboards",
+  //   icon: <SportsEsportsIcon sx={navIconStyle} />,
+  // },
   {
     name: "SPONSORS",
     link: "/sponsors",
     icon: <Redeem sx={navIconStyle} />,
   },
-  // {
-  //   name: "DISC GAME",
-  //   link: "/discgame",
-  //   icon: <SportsEsportsIcon sx={navIconStyle} />,
-  // },
+  {
+    name: "PAST CHAMPIONS",
+    link: "/past_champions",
+    icon: <MilitaryTechIcon sx={navIconStyle} />,
+  }
 ];
 
 export function NavBar() {

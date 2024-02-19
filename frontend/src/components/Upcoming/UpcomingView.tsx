@@ -1,6 +1,6 @@
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { Box, Divider, Typography } from "@mui/material";
-import { Event, events } from "../../data/events_data";
+import { events } from "../../data/events_data";
 
 function Title() {
   return (
@@ -21,7 +21,7 @@ function Title() {
 }
 
 interface Props {
-  event: Event;
+  event: IEvent;
 }
 
 function SmallEvent(props: Props) {
@@ -30,7 +30,7 @@ function SmallEvent(props: Props) {
     <Box my="1rem" px="0.5rem">
       <Box display={{ xs: "inline", sm: "flex"}} alignItems="center" justifyContent="space-between">
         <Typography variant="subtitle1" fontWeight="bold">
-          {event.name}
+          {event.title}
         </Typography>
         <Typography sx={{ color: "#6a6a6a", fontSize: "0.8rem" }}>
           {event.date}
@@ -58,7 +58,7 @@ export default function UpcomingView() {
       <Title />
       <Box height={{ xs: "20px", sm: "0px", lg: "20px"}} />
       {events.map((e, i) => {
-        let ret = [<SmallEvent event={e} key={e.name}/>];
+        let ret = [<SmallEvent event={e} key={e.title}/>];
         if (i < events.length - 1) {
           ret.push(<Divider key={i}/>);
         }

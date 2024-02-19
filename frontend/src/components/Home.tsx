@@ -1,8 +1,6 @@
 import { PlayArrow } from "@mui/icons-material";
-import { Box, Button, Stack, Typography } from "@mui/material";
+import { Box, Button, Stack } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import dr_logo_bar from "../assets/DR_bar.png";
-import dr_logo_vert from "../assets/DR_vert.png";
 import logo from "../assets/MBDGTlogoblack_cropped.png";
 import Upcoming from "./Upcoming";
 
@@ -24,9 +22,9 @@ export function Home() {
       <Stack justifyContent="top" alignItems="center" flex={1}>
 
         <Box component="img" src={logo} alt="tour" height={{ xs: "200px", sm: "400px"}} />
-        <Typography mt="1rem" sx={{ typography: { xs: "h4", sm: "h2"}}}>Presented By</Typography>
+        {/* <Typography mt="1rem" sx={{ typography: { xs: "h4", sm: "h2"}}}>Presented By</Typography>
         <Box component="img" src={dr_logo_bar} alt="disc republic" height={{ sm: "105px", md:"170px"}} display={{ xs: 'none', sm: 'block' }}/>
-        <Box component="img" src={dr_logo_vert} alt="disc republic" height="100px" display={{ xs: 'block', sm: 'none' }}/>
+        <Box component="img" src={dr_logo_vert} alt="disc republic" height="100px" display={{ xs: 'block', sm: 'none' }}/> */}
         <Button
           sx={{ mt: "1rem", width: { xs: "75%", sm: "50%"}}}
           variant="contained"
@@ -44,14 +42,14 @@ export function Home() {
         >
           REGISTER
         </Button>
-        <Button
+        {/* <Button
           sx={{ mt: "1rem", width: { xs: "75%", sm: "50%"}}}
           variant="contained"
           endIcon={<PlayArrow />}
           onClick={() => navigate('/leaderboards')}
         >
           LEADERBOARDS
-        </Button>
+        </Button> */}
       </Stack>
       <Box width={{ md: "100%", lg: "25%" }} justifyContent="center" alignItems="center">
         <Upcoming />

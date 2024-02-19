@@ -1,0 +1,1 @@
+export { PastChampions } from './PastChampions';
