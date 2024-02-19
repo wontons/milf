@@ -52,7 +52,7 @@ export const events: IEvent[] = [
         tier: "B",
         date: "Sat-Sun, July 13-14",
         location: "La Barriere Park, Stony Mountain Quarry",
-        td: "Jessican Benoit",
+        td: "Jessica Benoit",
         url: "https://www.discgolfscene.com/tournaments/5th_Annual_DGM_Provincials_2024/registration",
     },
     {
