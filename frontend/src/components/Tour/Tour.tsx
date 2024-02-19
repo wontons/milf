@@ -65,12 +65,6 @@ export function Tour () {
                     No, players can play any number of events, but the more events you play the more points you can earn which will help you earn more prizes at the Tour Championship. 
                 </Typography>
                 <Typography variant="h6" mt="1rem">
-                    <strong>When can I join the tour?</strong>
-                </Typography>
-                <Typography variant="body1" mt="0.5rem" textAlign="center">
-                    You can join the tour at any time throughout the season, but the earlier you join the more points you will be able to earn. Players after that join after the 3rd event will be able to retroactively earn points from 1 event that previously participated in that season. Make sure to register early! 
-                </Typography>
-                <Typography variant="h6" mt="1rem">
                     <strong>When can I join the Tour?</strong>
                 </Typography>
                 <Typography variant="body1" mt="0.5rem" textAlign="center">
