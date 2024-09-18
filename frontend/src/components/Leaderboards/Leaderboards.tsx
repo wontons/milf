@@ -5,6 +5,7 @@ import { fa1, fa2, fa3, fa40, ma1, ma2, ma3, ma40, mpo } from "./fall_classic_20
 import LeaderboardDesktopMenu from "./LeaderboardDesktopMenu";
 import LeaderboardMobileMenu from "./LeaderboardMobileMenu";
 import LeaderboardTabPanel from "./LeaderboardTabPanel";
+import { Title } from '../Title';
 import { divisions as _divisions, leaderboardColumns } from "./utils";
 
 
@@ -59,8 +60,19 @@ const Leaderboards = () => {
     };
 
     return (
-        <Stack direction="column" alignItems="center" sx={{ overflowY: 'auto'}}>
-            <Typography variant="h4"><strong>Leaderboards</strong></Typography>
+        <Stack 
+            m="2rem"
+            direction="column"
+            alignItems="center"
+            p="1rem"
+            borderRadius={4}
+            sx={{
+                color: 'white', 
+                background: 'rgb(0,0,0,0.6)', 
+                position: "relative" 
+            }}
+        >
+            <Title title="Leaderboards" />
             {isMenuVertical && (
                 <LeaderboardMobileMenu selected={selected} handleChange={handleChange} />
             )}

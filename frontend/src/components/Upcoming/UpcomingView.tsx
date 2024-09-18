@@ -1,24 +1,7 @@
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { Box, Divider, Typography } from "@mui/material";
 import { events } from "../../data/events_data";
-
-function Title() {
-  return (
-    <Typography
-      px="0.5rem"
-      variant="h6"
-      fontWeight="bold"
-      sx={{
-        position: "absolute",
-        top: "-17px",
-        backgroundColor: "#f8f8f8",
-        color: "#4a4a4a",
-      }}
-    >
-      Upcoming Events
-    </Typography>
-  );
-}
+import { Title } from "../Title";
 
 interface Props {
   event: IEvent;
@@ -32,7 +15,7 @@ function SmallEvent(props: Props) {
         <Typography variant="subtitle1" fontWeight="bold">
           {event.title}
         </Typography>
-        <Typography sx={{ color: "#6a6a6a", fontSize: "0.8rem" }}>
+        <Typography sx={{ fontSize: "0.8rem", textAlign: "right" }}>
           {event.date}
         </Typography>
       </Box>
@@ -49,13 +32,13 @@ function SmallEvent(props: Props) {
 export default function UpcomingView() {
   return (
     <Box
+      color="white"
       m="2rem"
       p="1rem"
-      border="2px solid #a1a1a1"
       borderRadius={4}
-      sx={{ position: "relative", background: "#f8f8f8" }}
+      sx={{ position: "relative", background: "rgba(0,0,0,0.5)" }}
     >
-      <Title />
+      <Title title="Upcoming Events" />
       <Box height={{ xs: "20px", sm: "0px", lg: "20px"}} />
       {events.map((e, i) => {
         let ret = [<SmallEvent event={e} key={e.title}/>];
