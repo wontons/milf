@@ -13,10 +13,10 @@ export function EventCard(props: IEvent) {
     const [expanded, setExpanded] = useState<boolean>(false);
 
     return (
-    <Box sx={{ m: '1rem', width: '50%'}}>
+    <Box sx={{ m: '1rem', width: '50%'}} color="white">
         <Stack direction="row" alignItems="center">
             <IconButton sx={{ mr: '1rem'}} onClick={() => setExpanded(!expanded)}>
-                {expanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                {expanded ? <ExpandLessIcon color='info' /> : <ExpandMoreIcon color="info" />}
             </IconButton>
             <Typography>{title}</Typography>
         </Stack>

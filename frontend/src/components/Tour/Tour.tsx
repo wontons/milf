@@ -7,7 +7,7 @@ const url = "https://www.discgolfscene.com/tournaments/2023_Manitoba_Disc_Golf_T
 export function Tour () {
  
     return (
-        <Box display="flex" flex={1} alignItems="top" justifyContent="center" sx={{ overflowY: 'auto', overflowX: 'hidden'}}>
+        <Box color="white" display="flex" flex={1} alignItems="top" justifyContent="center" p="2rem" m="2rem" sx={{ background: 'rgb(0,0,0,0.6)'}}>
             <Stack direction="column" alignItems="center" mr="1rem">
                 <Typography variant="h2" textAlign="center">The Manitoba Disc Golf Tour</Typography>
                <Typography variant="body1" textAlign="center" sx={{ mt: '0.5rem'}}>

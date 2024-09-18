@@ -10,7 +10,7 @@ import victory_pints from "../../assets/victorypints.webp";
 
 export function Sponsors () {
     return (
-        <Box display="flex" flex={1} alignItems="top" justifyContent="center" sx={{ overflowY: 'auto', overflowX: 'hidden'}}>
+        <Box color="white" display="flex" flex={1} alignItems="top" justifyContent="center">
             <Stack direction="column" alignItems="center" mr="1rem" mt="1rem">
                 <Typography variant="h5" mt="1rem"><strong>2023</strong></Typography>
                 <Box component="img" src={dr_logo_bar} alt="disc republic" height={{ sm: "105px", md:"170px"}} display={{ xs: 'none', sm: 'block' }}/>
