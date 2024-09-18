@@ -15,7 +15,7 @@ const rows = [
 
 export function PastChampions() {
     return (
-        <Box m="1rem" sx={{ overflowY: 'auto', overflowX: 'hidden'}}>
+        <Box m="1rem" color="white">
             <Stack direction="column" alignItems="center" mr="1rem">
                 <Typography variant="h6">
                     2023

@@ -1,5 +1,5 @@
 import { PlayArrow } from "@mui/icons-material";
-import { Box, Button, Grid, Stack } from "@mui/material";
+import { Button, Grid, Stack } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/MBDGTlogowhite.png";
 import Upcoming from "./Upcoming";
@@ -14,8 +14,8 @@ export function Home() {
   return (
     <Grid container spacing={2}>
       <Grid item xs={3}>
-        <img alt="Logo" style={{ height: "300px", width: "300px" }} src={logo} />
         <Stack alignItems="center">
+        <img alt="Logo" style={{ height: "300px", width: "300px" }} src={logo} />
           <Button
             sx={{ mt: "1rem", width: { xs: "75%", sm: "50%"}}}
             variant="contained"
